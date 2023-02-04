@@ -1,0 +1,69 @@
+Assignment 1 answers & steps taken
+
+
+Question 1. Create directory called answers
+~/Applications/GitHub/assignment-1 (main)
+$ mkdir answers
+
+Question 2. Create file called answers.txt
+~/Applications/GitHub/assignment-1 (main)
+$ cd answers/
+~/Applications/GitHub/assignment-1/answers (main)
+$ nano answers.txt
+
+Question 3. Edit the file
+Copied the above commands using nano and used ctrl+O to save, ctrl+X to exit
+
+Question 4. List absolute path to answers.txt
+~/Applications/GitHub/assignment-1/answers/answers.txt
+
+Question 5. Listing files in a directory including hidden files
+The -a flag will list hidden files
+
+Question 6. Listing files of another directory
+use ls followed by the path to the directory.
+e.g. to list files within the folder "college" on my device, I would use 
+$ ls ~/OneDrive/Documents/College
+
+Question 7. rm
+rm could potentially be dangerous as it permanently removes/deletes files without a way to bring them back (i.e. it doesn't send them to a recycle bin)
+A simple example would be if you have 2 directories with similar names, one which is to be deleted and the other which has important data, and use rm -r on the wrong directory. This cannot be retrieved and all data within the directory would be permanently lost.
+
+Question 8. 
+$ mkdir results 
+
+Question 9. 
+$ nano my_script.sh
+then copy from the question
+save and exit using ctrl+O and ctrl+X
+
+
+Question 10. 
+not required on my device but can be done using 
+chmod 755 header.sh
+
+Question 11.
+$ cd ../assignment-1-main-main/data/
+
+Question 12. 
+$ wc -w * | sort -rn | head -n 3 | tail -n 1
+output: 1258 annual_aqi_by_cbsa_2013.csv
+(I selected top 3 lines because the 1st one was the total)
+
+Question 13.
+$ for filename in ./*.csv
+> do ~/Applications/GitHub/assignment-1/answers/my_script.sh $filename
+> done > q13.txt
+(I chose to save the results in a separate text file)
+
+Question 14
+$ mkdir unzipped-files
+$ mv *.zip unzipped-files
+$ unzip '*.zip'
+
+Question 15
+$ rm -ir *.zip
+(then pressed y)
+
+Question 16
+$ mv *200?.csv ~/Applications/GitHub/assignment-1/answers/results
